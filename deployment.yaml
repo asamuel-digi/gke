@@ -1,22 +1,18 @@
 apiVersion: apps/v1
-kind: Deployment # Kubernetes resource kind we are creating
+kind: Deployment
 metadata:
   name: gke
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: gke
-  replicas: 1 # Number of replicas that will be created for this deployment
   template:
     metadata:
       labels:
-        app: gke
+        app:gke
     spec:
       containers:
-        - name: gke
-          image: gke 
-# Image that will be used to containers in the cluster
-          imagePullPolicy: IfNotPresent
-          ports:
-            - containerPort: 8080 
-# The port that the container is running on in the cluster
+        - name: app
+          image: gcr.io/PROJECT_ID/IMAGE:TAG
+          imagePullPolicy: Always
