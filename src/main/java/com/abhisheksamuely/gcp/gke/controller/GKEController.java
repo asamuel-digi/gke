@@ -15,7 +15,6 @@ public class GKEController {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd:MM:yy HH:mm:ss");
 		
 		System.out.println("application hit at "+sdf.format(calndr.getTime()));
-		System.out.println(" ");
 		
 		return "application hit at "+sdf.format(calndr.getTime());
 	}
