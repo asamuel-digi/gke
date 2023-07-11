@@ -1,12 +1,11 @@
-apiVersion: v1 # Kubernetes API version
-kind: Service # Kubernetes resource kind we are creating
-metadata: # Metadata of the resource kind we are creating
-  name: gke-svc
+apiVersion: v1
+kind: Service
+metadata:
+  name: gke
 spec:
   selector:
     app: gke
+  type: LoadBalancer
   ports:
-    - protocol: "TCP"
-      port: 8080 # The port that the service is running on in the cluster
-      targetPort: 8080 # The port exposed by the service
-  type: NodePort # type of the service.
+    - port: 80
+      targetPort: 8080
