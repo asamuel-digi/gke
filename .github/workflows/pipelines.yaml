@@ -5,12 +5,12 @@ on:
     branches: [ main ]
 
 env:
-	PROJECT_ID: ${{secrets.GKE_PROJECT_ID}}
-	GKE_CLUSTER: gke
-	GKE_ZONE: us-central1
-	DEPOLYMENT_NAME: gke
-	IMAGE: gke
-	TAG: 1.0.0
+  PROJECT_ID: ${{secrets.GKE_PROJECT_ID}}
+  GKE_CLUSTER: gke
+  GKE_ZONE: us-central1
+  DEPLOYMENT_NAME: gke
+  IMAGE: gke
+  TAG: 1.0.0
 
 jobs:
 	setup-build-publish-deploy:
