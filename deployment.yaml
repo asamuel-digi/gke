@@ -14,5 +14,5 @@ spec:
     spec:
       containers:
         - name: app
-          image: gcr.io/PROJECT_ID/IMAGE:TAG
+          image: gcr.io/digisprint-portals-test/gke-0.0.1-SNAPSHOT:latest
           imagePullPolicy: Always

@@ -9,7 +9,7 @@ spec:
     app: nginx
   ports:
   - port: 80
-    targetPort: 80
+    targetPort: 8080
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -29,4 +29,4 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: us-central1-docker.pkg.dev/GOOGLE_PROJECT/gke/nginx:latest
+        image: us-central1-docker.pkg.dev/digisprint-portals-test/gke/nginx:latest
