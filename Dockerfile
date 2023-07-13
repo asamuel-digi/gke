@@ -1,4 +1,4 @@
 FROM openjdk:11
-EXPOSE 8080
-ADD target/gke-0.0.1-SNAPSHOT.jar gke.jar
-ENTRYPOINT [ "java", "-jar", "/gke.jar" ]
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} gke.jar
+ENTRYPOINT ["java","-jar","/gke.jar"]
