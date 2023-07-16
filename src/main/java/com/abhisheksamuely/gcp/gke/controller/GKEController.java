@@ -14,8 +14,9 @@ public class GKEController {
 		calndr.setTimeInMillis(System.currentTimeMillis());
 		SimpleDateFormat sdf = new SimpleDateFormat("dd:MM:yy HH:mm:ss");
 		
+		
 		System.out.println("application hit at "+sdf.format(calndr.getTime()));
-		System.out.println(" ");
+		System.out.println("update from git pushed");
 		
 		return "application hit at "+sdf.format(calndr.getTime());
 	}
