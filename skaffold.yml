@@ -1,0 +1,14 @@
+apiVersion: skaffold/v2beta17
+kind: Config
+metadata:
+  name: gke
+build:
+  artifacts:
+  - image: gcr.io/$PROJECT_ID/${_SERVICE_NAME}:${SHORT_SHA}
+    docker:
+      dockerfile: Dockerfile
+deploy:
+  kubectl:
+    manifests:
+    - deployments.yaml
+    - service.yaml
