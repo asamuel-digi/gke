@@ -17,7 +17,6 @@ public class GKEController {
 		
 		System.out.println("application hit at "+sdf.format(calndr.getTime()));
 		System.out.println("hello abu, arun");
-		System.out.println("hello");
 		return "application hit at "+sdf.format(calndr.getTime());
 	}
 }
