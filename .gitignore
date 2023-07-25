@@ -13,3 +13,4 @@ target/classes/com/abhisheksamuely/gcp/gke/GkeApplication.class
 target/classes/META-INF/MANIFEST.MF
 target/classes/META-INF/maven/com.abhisheksamuely.parser.gson/gke/pom.properties
 target/classes/META-INF/maven/com.abhisheksamuely.parser.gson/gke/pom.xml
+*.class
