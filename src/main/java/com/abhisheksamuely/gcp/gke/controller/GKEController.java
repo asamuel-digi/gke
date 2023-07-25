@@ -17,6 +17,6 @@ public class GKEController {
 		
 		String instanceId = com.google.cloud.MetadataConfig.getInstanceId();
 		
-		return "application hit at "+sdf.format(calndr.getTime())+" instance: "+instanceId;
+		return "application hit at "+sdf.format(calndr.getTime())+" instance: "+instanceId.indexOf(0, 16);
 	}
 }
