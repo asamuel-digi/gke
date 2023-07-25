@@ -16,8 +16,7 @@ public class GKEController {
 		
 		
 		System.out.println("application hit at "+sdf.format(calndr.getTime()));
-		System.out.println("update from git pushed");
-		
+		System.out.println("hello abu, arun");
 		return "application hit at "+sdf.format(calndr.getTime());
 	}
 }
